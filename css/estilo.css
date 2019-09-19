@@ -1,0 +1,419 @@
+
+*{
+   padding: 0;
+   margin: 0;
+   font-family: 'Roboto', sans-serif;
+}
+body{
+   width: 100%;
+   height: 100%;
+}
+
+#menu{
+   width: 100%;
+   height: 50px;
+   background-color: rgba(0, 0, 0, 0.74);
+}
+#menu ul{
+   text-align: center;
+   line-height: 50px;
+}
+
+#menu a{
+   padding: 15px;
+   color: white;
+   text-decoration: none;
+   text-transform: lowercase;
+   
+    
+}
+#menu a:hover{
+   background: white;
+   color: black;
+}
+#menu a:active{
+   transition: 0.4s;
+}
+#logo{
+   padding: 10px;
+   margin-left: 30%;
+   font-size: 20px;
+   line-height: 20px;
+   float: left;
+   color: white;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+#conteudo{
+   margin: 0 auto;
+   width: 50%;
+   text-align: center;
+   margin-top: 120px;
+   color: white
+}
+
+#conteudo h1{
+   font-size: 40px;
+}
+
+#conteudo h2{
+   font-size: 15px;
+   font-weight: lighter;
+}
+#conteudo #whats{
+   margin-top: 20px;
+   color: white;
+   border-left: 4px solid green;
+   border-right: none;
+   border-top: none;
+   border-bottom: none;
+   background: none;
+   padding: 10px 80px;
+   transition: 0.4s;
+   font-size: 15px;
+   font-weight: lighter;
+   
+
+}
+
+#conteudo #whats:hover{
+   border-left: 4px solid white;
+   background-color: green;
+   color: white;
+}
+
+#conteudo #linkedin{
+   margin-top: 20px;
+   color: white;
+   border-left: 4px solid ;
+   border-right: none;
+   border-top: none;
+   border-bottom: none;
+   background: none;
+   padding: 10px 85px;
+   transition: 0.4s;
+   font-size: 15px;
+   font-weight: lighter;
+   
+
+}
+
+#conteudo #linkedin:hover{
+   border-left: 4px solid white;
+   background-color: darkcyan;
+   color: white;
+}
+#sobre{
+   width: 100%;
+   height: 400px;
+}
+
+#sobre article{
+   width: 40%;
+   float: left;
+}
+
+#sobre article p{
+   margin: 0 auto;
+   text-align: justify;
+   padding: 5%;
+   color: gray;
+   font-weight: lighter;
+}
+
+#sobre article h1{
+   margin: 0 auto;
+   padding: 8%;
+   font-weight: lighter;
+   font-size: 30px;
+   color: black;
+   text-align: center;
+   font-family: 'Lexend Deca', sans-serif;
+   text-transform: uppercase;
+   
+}
+#sobre article h2{
+   padding: 0;
+   margin: 0 auto;
+   font-weight: lighter;
+   font-size: 15px;
+   color: black;
+   text-align: center;
+   font-family: 'Lexend Deca', sans-serif;
+   text-transform: uppercase;
+}
+#media li{
+   list-style: none;
+   margin: 5%;
+   padding: 5%;
+   margin-top: 1%;
+   font-size: 20px;
+   color: black;
+   transition: 0.5s;
+   display: inline-block;
+   cursor: pointer;
+}
+#linkedin:hover {
+   color: darkcyan;
+}
+#instagram:hover {
+   color: red;
+}
+#github:hover {
+   color: sandybrown;
+}
+#wpp:hover {
+   color: green;
+}
+#sobre aside{
+   width: 60%;
+   float: right;
+   
+}
+
+#sobre aside h1{
+   margin-left: 40px;
+   padding: 10px 20px;
+   margin-top: 35px;
+   font-weight: lighter;
+   color: black;
+   font-size: 25px;
+   border-left: 8px solid tomato;
+   width: 60%;
+   font-family: 'Lexend Deca', sans-serif;
+   text-transform: uppercase;
+}
+#sobre aside a{
+   float: right;
+   text-align: justify;
+   margin-top: 10px;
+   padding: 20px 100px;
+   color: gray;
+   font-weight: lighter;
+   transition: 0.4s;
+   display: flex;
+   border-bottom: none;
+   text-decoration: none;
+   box-shadow: 5px 5px 10px gray;
+   width: 70%;
+   
+}
+#frontEnd{
+   border-right: 4px solid palegreen;
+}
+#frontEnd:hover{
+   padding: 30px 120px;
+   background-color: greenyellow;
+   border-right: 4px solid white;
+   color: white;
+   font-weight: bolder;
+}
+#operacional{
+   border-right: 4px solid slateblue;
+}
+#operacional:hover{
+   padding: 30px 120px;
+   background-color: blueviolet;
+   border-right: 4px solid white;
+   color: white;
+   font-weight: bolder;
+}
+#ferramentas{
+   border-right: 4px solid tomato;
+}
+#ferramentas:hover{
+   background-color: tomato;
+   padding: 30px 120px;
+   border-right: 4px solid white;
+   color: white;
+   font-weight: bolder;
+}
+
+#grid{
+   margin-top: 40px;
+}
+#grid img{
+   margin: 0 auto;
+   padding: 10px 80px;
+   box-shadow: 5px 5px 10px gray;
+   width: 40%;
+   transition: 0.4s;
+}
+
+#sobre #html{
+   width: 80px;
+   height: 80px;
+   transition: 0.4s;
+}
+
+#sobre #html:hover{
+   width: 100px;
+   height: 100px;
+}
+#grid img:hover{
+   padding: 10px 80px;
+   background-color: gray;
+
+}
+#formacao{
+   text-align: center;
+}
+
+
+#formacao h1 {
+   color: white;
+   font-family: 'Lexend Deca', sans-serif;
+   font-size: 40px;
+   text-transform: uppercase;
+   text-align: center;
+   padding: 60px;
+   font-weight: lighter;
+}
+
+
+#formacao h2 {
+   color: white;
+   font-family: 'Lexend Deca', sans-serif;
+   text-transform: uppercase;
+   text-align: center; 
+}
+
+#botao{
+   text-align: center;
+}
+#botaoQi[type=submit] {
+    color: white;
+    margin: 0 auto;
+    margin-top: 10px;
+    background:url(../img/qiClaro.png);
+    width:300px;
+    height:100px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.8s;
+    font-size: 18px;
+    font-weight: normal;
+    display: flex;
+}
+#botaoQi[type=submit]:hover{
+   background:url(../img/qi.png);
+   cursor: pointer;
+   text-decoration: white;
+  
+}
+#botaoSm[type=submit] {
+   color: white;
+   margin: 0 auto;
+   margin-top: 10px;
+   background:url(../img/smClaro.png);
+   width:300px;
+   height:100px;
+   border-radius: 10px;
+   border: none;
+   transition: 0.8s;
+   font-size: 18px;
+   font-weight: normal;
+   display: flex;
+}
+#botaoSm[type=submit]:hover{
+  background:url(../img/sm.png);
+  cursor: pointer;
+  text-decoration: white;
+ 
+}
+#botaoFapa[type=submit] {
+   color: white;
+   margin: 0 auto;
+   margin-top: 10px;
+   background:url(../img/fapaClaro.png);
+   width:300px;
+   height:100px;
+   border-radius: 10px;
+   border: none;
+   transition: 0.4s;
+   font-size: 18px;
+   font-weight: normal;
+   display: flex;
+}
+#botaoFapa[type=submit]:hover{
+  background:url(../img/fapa.png);
+  cursor: pointer;
+  text-decoration: white;
+ 
+}
+footer{
+   width: 100%;
+   height: 150px;
+   margin-top: 35px;
+}
+footer article{
+   width: 33.3%;
+   float: left;
+}
+footer article h1{
+   font-family: 'Lexend Deca', sans-serif;
+   margin-left: 100px;
+   padding-left: 25px;
+   font-size: 20px;
+   font-weight: lighter;
+   border-left: 8px solid tomato;
+}
+footer article p{
+   padding: 10px 40px;
+   margin-top: 10px;
+   font-weight: lighter;
+   color: gray;
+   font-size: 10px;
+   text-align: justify;
+}
+footer section{
+   margin: 0 auto;
+   width: 33.3%;
+   text-align: center;
+}
+footer section h1{
+   font-family: 'Lexend Deca', sans-serif;
+   margin: 10px 155px;
+   margin-bottom: 15px;
+   font-size: 20px;
+   font-weight: lighter;
+   border-left: 8px solid darkcyan;
+}
+footer section p{
+   margin-top: 10px;
+   font-weight: lighter;
+   color: gray;
+   font-size: 10px;
+   text-align: center;
+}
+footer aside{
+   text-align: right;
+   float: right;
+   width: 33.3%;
+}
+footer aside h1{
+   font-family: 'Lexend Deca', sans-serif;
+   margin: 0px 145px;
+   padding-right: 100px;
+   margin-right: 40px;
+   font-size: 20px;
+   font-weight: lighter;
+   border-left: 8px solid darkmagenta;
+}
+#mediaFooter{
+   list-style: none;
+   margin: 5%;
+   padding: 5%;
+   font-size: 10px;
+   color: gray;
+   transition: 0.5s;
+   display: inline;
+   text-align: center;
+   cursor: pointer;
+   font-weight: lighter
+}
+
+
+a{
+   text-decoration: none;
+}
