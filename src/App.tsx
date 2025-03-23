@@ -1,6 +1,7 @@
 import Nav from "./components/Nav.tsx"
 import Home from "./components/Home.tsx"
 import Carrer from "./components/Career.tsx"
+import Projects from "./components/Projects.tsx"
 
 function App() {
   return(
@@ -8,6 +9,7 @@ function App() {
     <Nav/>
     <Home/>
     <Carrer/>
+    <Projects/>
   </div>
   ) 
 }
