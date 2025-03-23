@@ -7,7 +7,7 @@ function Nav() {
             <div className="flex items-center space-x-6 text-sm">
                 <ul className="flex space-x-6">
                     <li>Home</li>
-                    <li>Sobre</li>
+                    <li>Carreira</li>
                     <li>Projetos</li>
                     <li>Contatos</li>
                 </ul>
