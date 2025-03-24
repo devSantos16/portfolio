@@ -1,6 +1,6 @@
 import YuGiOhImage from "./../assets/yu_gi_oh_image.jpg"
 import UniritterImage from "./../assets/uniritter_image.jpg"
-import ProjectsCard from "./sub-components/ProjectsCard"
+import ProjectsCard from "./ProjectsCard"
 import TecnologiesCard from "./TecnologiesCard"
 
 import { DiDotnet } from "react-icons/di"

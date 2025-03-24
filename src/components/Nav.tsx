@@ -1,4 +1,4 @@
-import PurpleButton from "./sub-components/PurpleButton";
+import PurpleButton from "./PurpleButton";
 
 function Nav() {
     return (

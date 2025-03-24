@@ -1,6 +1,6 @@
 import logo_altus from "./../assets/logo_altus.png"
 import logo_uniritter from "./../assets/logo_uniritter.png"
-import CarrerCard from "./sub-components/CareerCard"
+import CarrerCard from "./CareerCard"
 
 function Carrer(){
     return (
