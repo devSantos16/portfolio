@@ -25,7 +25,7 @@ function Projects() {
                 <TecnologiesCard Icon={FaPython} backgroundColor="bg-yellow-500" text="Python" link="https://www.python.org/"/>
                 <TecnologiesCard Icon={SiTypescript} backgroundColor="bg-gray-400" text="TypeScript" link="https://www.typescriptlang.org/"/>
                 <TecnologiesCard Icon={FaReact} backgroundColor="bg-yellow-500" text="React" link="https://react.dev/"/>
-            </div>ty
+            </div>
         </div>
     )
 }
