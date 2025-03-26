@@ -6,7 +6,7 @@ function Carrer(){
     return (
         <div className="p-8 space-y-12">
             <h1 className="text-white text-center text-5xl font-bold">Minha Carreira</h1>
-            <div className="flex justify-center items-center gap-8">
+            <div className="flex flex-wrap justify-center items-center gap-8">
                 <CarrerCard
                     logo={logo_uniritter}
                     title="Alunx Brilhantes"

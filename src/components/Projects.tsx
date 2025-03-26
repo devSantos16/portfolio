@@ -14,12 +14,12 @@ function Projects() {
     return (
         <div className="bg-[#15141b] space-y-12 p-6">
             <h1 className="text-white text-center text-5xl font-bold">Meus Projetos</h1>
-            <div className="flex justify-center space-x-12">
+            <div className="flex flex-wrap justify-center gap-10">
                 <ProjectsCard title="Yu-Gi-Oh Forbidden API" image={YuGiOhImage} link={"https://github.com/devSantos16/YuGiOhForbiddenAPI"} />
                 <ProjectsCard title="Robo Financiamentos" image={UniritterImage} link={"https://github.com/robo-financiamentos/robo-2.0"} />
             </div>
             <h1 className="text-white text-center text-5xl font-bold">Tecnologias</h1>
-            <div className="flex justify-center space-x-4">
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-10">
                 <TecnologiesCard Icon={DiDotnet} backgroundColor="bg-purple-700" text=".NET" link="https://dotnet.microsoft.com/pt-br/" />
                 <TecnologiesCard Icon={TbBrandCSharp} backgroundColor="bg-purple-700" text="CSharp" link="https://dotnet.microsoft.com/pt-br/languages/csharp"/>
                 <TecnologiesCard Icon={FaPython} backgroundColor="bg-yellow-500" text="Python" link="https://www.python.org/"/>

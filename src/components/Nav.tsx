@@ -11,9 +11,9 @@ function DownloadPdf(download: string) {
 
 function Nav() {
     return (
-        <nav className="flex flex-wrap text-white justify-between items-center py-10 px-20">
-            <h1 className="text-2xl font-bold">Portfólio em Desenvolvimento</h1>
-            <div className="flex items-center space-x-6 text-sm">
+        <nav className="flex flex-wrap gap-5 text-white justify-between items-center p-10">
+            <h1 className="font-bold">Portfólio em Desenvolvimento</h1>
+            <div className="flex items-center text-sm">
                 <PurpleButton OnClick={() => DownloadPdf("/assets/curriculum/curriculum.docx")}>Meu currículo</PurpleButton>
             </div>
         </nav>

@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 function Home() {
     return (
-        <div className="flex justify-center items-center gap-44 p-6">
+        <div className="flex flex-wrap justify-center items-center gap-20 p-6">
             <div className='max-w-2xl  space-y-6'>
                 <div>
                     <p className='text-gray-400 font-semibold'>Desenvolvedor de Software | .NET | C# </p>
