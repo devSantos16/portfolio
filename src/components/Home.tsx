@@ -1,10 +1,14 @@
 import profilePhoto from '../assets/profile-photo.jpg';
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
+interface HomeProps{
+    FadeIn: string
+}
 
-function Home() {
+
+function Home({ FadeIn }: HomeProps) {
     return (
-        <div className="flex flex-wrap justify-center items-center gap-20 p-6">
+        <div className={`flex flex-wrap justify-center items-center gap-20 p-6 ${FadeIn}`}>
             <div className='max-w-2xl  space-y-6'>
                 <div>
                     <p className='text-gray-400 font-semibold'>Desenvolvedor de Software | .NET | C# </p>

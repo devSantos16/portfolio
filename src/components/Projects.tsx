@@ -9,10 +9,15 @@ import { FaPython } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 
-function Projects() {
+interface ProjectsProps {
+    FadeIn: string
+}
+
+
+function Projects({ FadeIn }: ProjectsProps) {
 
     return (
-        <div className="bg-[#15141b] space-y-12 p-6">
+        <div className={`bg-[#15141b] space-y-12 p-6 ${FadeIn}`}>
             <h1 className="text-white text-center text-5xl font-bold">Meus Projetos</h1>
             <div className="flex flex-wrap justify-center gap-10">
                 <ProjectsCard title="Yu-Gi-Oh Forbidden API" image={YuGiOhImage} link={"https://github.com/devSantos16/YuGiOhForbiddenAPI"} />

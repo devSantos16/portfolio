@@ -2,9 +2,13 @@ import logo_altus from "./../assets/logo_altus.png"
 import logo_uniritter from "./../assets/logo_uniritter.png"
 import CarrerCard from "./CareerCard"
 
-function Carrer(){
+interface CareerProps {
+    FadeIn: string
+}
+
+function Carrer({ FadeIn }: CareerProps){
     return (
-        <div className="p-8 space-y-12">
+        <div className={`p-8 space-y-12 ${FadeIn}`}>
             <h1 className="text-white text-center text-5xl font-bold">Minha Carreira</h1>
             <div className="flex flex-wrap justify-center items-center gap-8">
                 <CarrerCard
