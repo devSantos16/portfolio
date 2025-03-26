@@ -14,7 +14,7 @@ function Nav() {
         <nav className="flex flex-wrap gap-5 text-white justify-between items-center p-10">
             <h1 className="font-bold">Portfólio em Desenvolvimento</h1>
             <div className="flex items-center text-sm">
-                <PurpleButton OnClick={() => DownloadPdf("/assets/curriculum/curriculum.docx")}>Meu currículo</PurpleButton>
+                <PurpleButton OnClick={() => DownloadPdf("/assets/curriculum.docx")}>Meu currículo</PurpleButton>
             </div>
         </nav>
     );
