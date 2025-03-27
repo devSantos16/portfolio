@@ -5,24 +5,52 @@ import Projects from "./components/Projects.tsx"
 import { useEffect, useState } from "react"
 
 
+export interface AppearanceTheme {
+  backgroundColor: string
+  alternativeBackgroundColor?: string
+  textColor: string
+  buttonBackgroundColor: string
+  paragraphColor: string
+} 
+
 
 
 function App() {
-  const [isLoaded, setIsLoad] = useState(false);
+
+  const darkTheme : AppearanceTheme = {
+    backgroundColor: "bg-[#131219]",
+    alternativeBackgroundColor: "bg-[#15141b]",
+    buttonBackgroundColor: "bg-gray-900",
+    textColor: "text-white",
+    paragraphColor: "text-gray-400"
+  }
+
+  const whiteTheme: AppearanceTheme = {
+    backgroundColor: "bg-white",
+    alternativeBackgroundColor: "bg-gray-100",
+    buttonBackgroundColor: "bg-gray-200",
+    textColor: "text-black",
+    paragraphColor: "text-gray-700"
+}
+
+
+  const [isLoaded, setIsLoad] = useState(false)
+  const [theme] = useState(whiteTheme)
+
 
   useEffect( () => {
       setIsLoad(true)
     }, [])
   
     
-  const fadeIn = `transition-opacity duration-${1000} ease-in-out ${isLoaded ? "opacity-100" : "opacity-0"}`
+  const fadeIn = `transition-opacity duration-1000 ease-in-out ${isLoaded ? "opacity-100" : "opacity-0"}`
 
   return(
-  <div className={`bg-[#131219] h-[100%] w-screen space-y-12`}>
-    <Nav/>
-    <Home FadeIn={fadeIn} />
-    <Carrer FadeIn={fadeIn} />
-    <Projects FadeIn={fadeIn} />
+  <div className={`${theme.backgroundColor} h-[100%] w-screen space-y-12`}>
+    <Nav Theme={theme} />
+    <Home Theme={theme} FadeIn={fadeIn} />
+    <Carrer Theme={theme} FadeIn={fadeIn} />
+    <Projects Theme={theme} FadeIn={fadeIn} />
   </div>
   ) 
 }

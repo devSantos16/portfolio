@@ -8,22 +8,24 @@ import { TbBrandCSharp } from "react-icons/tb";
 import { FaPython } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
+import { AppearanceTheme } from "../App"
 
 interface ProjectsProps {
-    FadeIn: string
+    FadeIn: string,
+    Theme: AppearanceTheme
 }
 
 
-function Projects({ FadeIn }: ProjectsProps) {
+function Projects({ FadeIn, Theme }: ProjectsProps) {
 
     return (
-        <div className={`bg-[#15141b] space-y-12 p-6 ${FadeIn}`}>
-            <h1 className="text-white text-center text-5xl font-bold">Meus Projetos</h1>
+        <div className={`${Theme.alternativeBackgroundColor} space-y-12 p-6 ${FadeIn}`}>
+            <h1 className={`${Theme.textColor} text-center text-5xl font-bold`}>Meus Projetos</h1>
             <div className="flex flex-wrap justify-center gap-10">
                 <ProjectsCard title="Yu-Gi-Oh Forbidden API" image={YuGiOhImage} link={"https://github.com/devSantos16/YuGiOhForbiddenAPI"} />
                 <ProjectsCard title="Robo Financiamentos" image={UniritterImage} link={"https://github.com/robo-financiamentos/robo-2.0"} />
             </div>
-            <h1 className="text-white text-center text-5xl font-bold">Tecnologias</h1>
+            <h1 className={`${Theme.textColor} text-center text-5xl font-bold`}>Tecnologias</h1>
             <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-10">
                 <TecnologiesCard Icon={DiDotnet} backgroundColor="bg-purple-700" text=".NET" link="https://dotnet.microsoft.com/pt-br/" />
                 <TecnologiesCard Icon={TbBrandCSharp} backgroundColor="bg-purple-700" text="CSharp" link="https://dotnet.microsoft.com/pt-br/languages/csharp"/>
